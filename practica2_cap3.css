@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  text-align: center;
+}
+#principal{
+  display: block;
+  width: 500px;
+  margin: 50px auto;
+  padding: 15px;
+  text-align: center;
+  border: 200px;
+  background-color: red;
+
+/*Transformaciones*/
+/*Transformacion Scale*/
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+
+  /*-moz-transform: scale(1,-1);
+  -webkit-transform: scale(1,-1);*/
+
+  /*Transformacion Rotate*/
+  /*  -moz-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg); */
+
+    /*Transformacion Skew*/
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+
+  /*Transformacion Translate y Combinacion del resto de transformaciones en una*/
+  /*-moz-transform: translateY(100px) rotate(45deg) scaleX(0.3);
+  -webkit-transform: translateY(100px) rotate(45deg) scaleX(0.3);*/
+
+  -moz-border-radius: 50px/ 10px
+  -webkit-border-radius: 50px/ 10px ;
+  border-radius: 50px /100px ;
+
+  -moz-box-shadow: rgb(200, -200, -200) 10px 10px 15px inset;
+  -webkit-box-shadow:rgb(200, -200, -200) 10px 10px 15px inset;
+  box-shadow:rgb(200, -200, -200) 10px  10px 15px  inset;
+
+  background: -webkit-linear-gradient(top,grey 40%,orange 60%);
+  background: -moz-linear-gradient(top,grey 40%,orange 60%);
+  outline: 2px dashed violet;
+  outline-offset: 15px;
+
+/*Transiciones*/
+
+-moz-transition:-moz-transform 1s ease-in-out 0.5s;
+-webkit-transition:-webkit-transform 1s ease-in-out 0.5s;
+
+}
+#principal:hover{
+  -moz-transform: rotate(30deg);
+ -webkit-transform: rotate(30deg);
+
+}
+#titulo{
+  font: bold 36px DeathMetal, sans-serif;
+  text-shadow: rgba(0, 0, 200 ,0.5) 3px 3px 5px;
+  letter-spacing: 5px;
+}
+@font-face {
+  font-family: 'DeathMetal';
+  src: url('bloody.ttf');
+}
+.esfera{
+  display: block;
+  width: 50px;
+  margin: 50px auto;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid blue;
+  background-color: red;
+
+  -moz-border-radius: 50px/ 10px
+  -webkit-border-radius: 50px/ 10px ;
+  border-radius: 100px /100px ;
+
+  background: -webkit-radial-gradient(center,circle,black 0%,red 200%);
+  background: -moz-radial-gradient(center,circle,black 0%,red 200%);
+}
+
+
+#play{
+  width: 700px;
+  margin: 20px auto;
+  padding: 5px;
+  background: black;
+  border: 1px solid red;
+
+
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+nav{
+  margin: 5px 0px;
+}
+#botones{
+  float:left;
+  width: 100px;
+  height: 20px;
+}
+#barra{
+  position: relative;
+  float: left;
+  width: 600px;
+  height: 16px;
+  padding: 2px;
+  border: 1px solid darkgrey;
+  background: darkblue;
+}
+#progreso{
+  position: absolute;
+  width: 0px;
+  height: 16px;
+  background: rgba(0, 0, 150, .2);
+}
